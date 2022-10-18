@@ -1,0 +1,22 @@
+[
+  { "id": 0, "name": "thời trang nam", "image": "category1.png" },
+  { "id": 1, "name": "đồng hồ", "image": "category6.png" },
+  { "id": 2, "name": "thiết bị điện tử", "image": "category3.png" },
+  { "id": 3, "name": "máy tính & laptop", "image": "category4.png" },
+  { "id": 4, "name": "máy ảnh & máy quay phim", "image": "category5.png" },
+  { "id": 5, "name": "giầy dép nam", "image": "category7.png" },
+  { "id": 6, "name": "thiết bị gia dụng", "image": "category8.png" },
+  { "id": 7, "name": "diện thoại & phụ kiện", "image": "category2.png" },
+  { "id": 8, "name": "thể thao & du lịch", "image": "category9.png" },
+  { "id": 9, "name": "ô tô & xe máy & xe đạp", "image": "category10.png" },
+  { "id": 10, "name": "thời trang nữ", "image": "category11.png" },
+  { "id": 11, "name": "mẹ & bé", "image": "category12.png" },
+  { "id": 12, "name": "nhà của & đời sống", "image": "category13.png" },
+  { "id": 13, "name": "sắc đẹp", "image": "category14.png" },
+  { "id": 14, "name": "sức khoẻ", "image": "category15.png" },
+  { "id": 15, "name": "giầy dép nữ", "image": "category16.png" },
+  { "id": 16, "name": "túi ví nữ", "image": "category17.png" },
+  { "id": 17, "name": "phụ kiện & sức khoẻ nữ", "image": "category18.png" },
+  { "id": 18, "name": "bách hoá online", "image": "category19.png" },
+  { "id": 19, "name": "nhà sách online", "image": "category20.png" }
+]

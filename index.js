@@ -9,7 +9,14 @@ const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, 'db.json'));
 const middleware = jsonServer.defaults();
 
-server.use(helmet());
+server.use(
+  helmet({
+    crossOriginResourcePolicy: false,
+  })
+);
+
+server.set('view engine', 'ejs');
+server.set('views', path.join(__dirname, './pages'));
 
 server.use(middleware);
 

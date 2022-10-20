@@ -43,7 +43,7 @@ router.render = (req, res) => {
     const _limit = Number.parseInt(queryParams._limit) || 10;
     const _totalRows = Number.parseInt(totalCountHeader);
     const _totalPage = Math.ceil(_totalRows / _limit);
-    const _nextPage = _CurrentPage === _totalPage ? null : _CurrentPage + 1;
+    const _nextPage = _CurrentPage < _totalPage ? _CurrentPage + 1 : _totalPage ;
     const _prevPage = _CurrentPage === 1 ? null : _CurrentPage - 1;
     return res.jsonp({
       data: res.locals.data,

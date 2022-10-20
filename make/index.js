@@ -5,9 +5,9 @@ const { makeSlug } = require('./helpers');
 const getJsonFile = (name) =>
   JSON.parse(fs.readFileSync(path.join(__dirname, `../data/${name}.json`), 'utf8').toString());
 
-const randomNumber = (min, max) => Math.random() * (max - min) + min;
+const randomNumber = (min, max) => Math.ceil(Math.random() * (max - min) + min);
 
-const categories = getJsonFile('categories').map(({ id, name, image, tags }) => ({
+const categories = getJsonFile('categories').map(({ id, name, image, tags, banner }) => ({
   id,
   name,
   image: `static/images/categories/${image}`,
@@ -16,6 +16,7 @@ const categories = getJsonFile('categories').map(({ id, name, image, tags }) => 
     name: it,
     slug: `${makeSlug(name)}/${makeSlug(it)}`,
   })),
+  banners: banner,
   createdAt: new Date().getTime(),
   updatedAt: new Date().getTime(),
 }));
